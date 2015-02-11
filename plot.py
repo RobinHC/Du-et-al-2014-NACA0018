@@ -7,7 +7,7 @@ def plot(name, env="reference"):
     plt.plot(df.alpha, df.cl/df.cd, "-o", label="$Re = {}$".format(name))
     
 def main():
-    env = "open-jet"
+    env = "closed-jet"
     names = ["6e4", "1e5", "1.4e5"]
     for name in names:
         plot(name, env)
